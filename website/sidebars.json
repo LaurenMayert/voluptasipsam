@@ -1,0 +1,15 @@
+{
+  "contributing": {
+    "Contributing": [
+      "contributing",
+      "environment-setup",
+      "codebase-overview",
+      "code-of-conduct"
+    ]
+  },
+  "docs": {
+    "Getting Started": [
+      "installation"
+    ]
+  }
+}

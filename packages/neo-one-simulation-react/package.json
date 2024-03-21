@@ -1,0 +1,48 @@
+{
+  "name": "@neo-one/simulation-react",
+  "version": "1.0.0-alpha.10",
+  "keywords": [
+    "neo",
+    "NEO",
+    "one",
+    "ONE",
+    "blockchain",
+    "neo-one",
+    "neo-one-suite",
+    "neo one",
+    "neo one suite",
+    "NEO ONE",
+    "NEO ONE suite",
+    "NEO•ONE",
+    "NEO•ONE suite",
+    "neo blockchain",
+    "NEO Blockchain",
+    "NEO blockchain",
+    "dapp",
+    "dapps",
+    "simulation",
+    "neo-one simulation",
+    "NEO-ONE simulation",
+    "neo one simulation",
+    "NEO ONE simulation"
+  ],
+  "description": "NEO•ONE Simulation - Bootstrap a decentralized app with NEO•ONE and React.",
+  "repository": "https://github.com/neo-one-suite/neo-one",
+  "bugs": "https://github.com/neo-one-suite/neo-one/issues",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "neo-one-simulation-react-post-create": "./dist/bin/post-create"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.42",
+    "@neo-one/simulation-utils": "^1.0.0-alpha.8"
+  }
+}

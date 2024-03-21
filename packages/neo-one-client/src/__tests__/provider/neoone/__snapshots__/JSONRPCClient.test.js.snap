@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JSONRPCClient fastForwardOffset 1`] = `
+Array [
+  Object {
+    "method": "fastforwardoffset",
+    "params": Array [
+      10,
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient fastForwardToTime 1`] = `
+Array [
+  Object {
+    "method": "fastforwardtotime",
+    "params": Array [
+      10,
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getAccount 1`] = `
+Array [
+  Object {
+    "method": "getaccountstate",
+    "params": Array [
+      "ALq7AWrhAueN6mJNqk6FHJjnsEoPRytLdW",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getAllStorage 1`] = `
+Array [
+  Object {
+    "method": "getallstorage",
+    "params": Array [
+      "3775292229eccdf904f16fff8e83e7cffdc0f0ce",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getAsset 1`] = `
+Array [
+  Object {
+    "method": "getassetstate",
+    "params": Array [
+      "9b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc5",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getBestBlockHash 1`] = `
+Array [
+  Object {
+    "method": "getbestblockhash",
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getBlock 1`] = `
+Array [
+  Object {
+    "method": "getblock",
+    "params": Array [
+      "9b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc5",
+      1,
+    ],
+    "watchTimeoutMS": undefined,
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getBlock 2`] = `
+Array [
+  Object {
+    "method": "getblock",
+    "params": Array [
+      0,
+      1,
+    ],
+    "watchTimeoutMS": undefined,
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getBlock 3`] = `
+Array [
+  Object {
+    "method": "getblock",
+    "params": Array [
+      0,
+      1,
+    ],
+    "watchTimeoutMS": 1000,
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getBlockCount 1`] = `
+Array [
+  Object {
+    "method": "getblockcount",
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getClaimAmount 1`] = `
+Array [
+  Object {
+    "method": "getclaimamount",
+    "params": Array [
+      undefined,
+      undefined,
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getContract 1`] = `
+Array [
+  Object {
+    "method": "getcontractstate",
+    "params": Array [
+      "3775292229eccdf904f16fff8e83e7cffdc0f0ce",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getInvocationData 1`] = `
+Array [
+  Object {
+    "method": "getinvocationdata",
+    "params": Array [
+      "3775292229eccdf904f16fff8e83e7cffdc0f0ce",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getMemPool 1`] = `
+Array [
+  Object {
+    "method": "getrawmempool",
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getNetworkSettings 1`] = `
+Array [
+  Object {
+    "method": "getnetworksettings",
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getOutput 1`] = `
+Array [
+  Object {
+    "method": "getoutput",
+    "params": Array [
+      undefined,
+      undefined,
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getStorageItem 1`] = `
+Array [
+  Object {
+    "method": "getstorage",
+    "params": Array [
+      "3775292229eccdf904f16fff8e83e7cffdc0f0ce",
+      "123",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getTransaction 1`] = `
+Array [
+  Object {
+    "method": "getrawtransaction",
+    "params": Array [
+      "9b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc5",
+      1,
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getTransactionReceipt 1`] = `
+Array [
+  Object {
+    "method": "gettransactionreceipt",
+    "params": Array [
+      "3775292229eccdf904f16fff8e83e7cffdc0f0ce",
+    ],
+    "watchTimeoutMS": undefined,
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getTransactionReceipt 2`] = `
+Array [
+  Object {
+    "method": "gettransactionreceipt",
+    "params": Array [
+      "3775292229eccdf904f16fff8e83e7cffdc0f0ce",
+    ],
+    "watchTimeoutMS": 1000,
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getUnspentOutput 1`] = `
+Array [
+  Object {
+    "method": "gettxout",
+    "params": Array [
+      undefined,
+      undefined,
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient getValidators 1`] = `
+Array [
+  Object {
+    "method": "getvalidators",
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient relayTransaction 1`] = `
+Array [
+  Object {
+    "method": "relaytransaction",
+    "params": Array [
+      "",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient runConsensusNow 1`] = `
+Array [
+  Object {
+    "method": "runconsensusnow",
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient sendTransactionRaw 1`] = `
+Array [
+  Object {
+    "method": "sendrawtransaction",
+    "params": Array [
+      "",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient testInvocation 1`] = `
+Array [
+  Object {
+    "method": "testinvocation",
+    "params": Array [
+      "00",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient testInvokeRaw 1`] = `
+Array [
+  Object {
+    "method": "invokescript",
+    "params": Array [
+      "12",
+    ],
+  },
+  undefined,
+]
+`;
+
+exports[`JSONRPCClient updateSettings 1`] = `
+Array [
+  Object {
+    "method": "updatesettings",
+    "params": Array [
+      Object {
+        "secondsPerBlock": 10,
+      },
+    ],
+  },
+  undefined,
+]
+`;

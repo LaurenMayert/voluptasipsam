@@ -1,0 +1,124 @@
+{
+  "name": "voluptasipsam",
+  "version": "1.0.0",
+  "description": "NEO•ONE is a suite of tools and frameworks for developing dapps on the NEO blockchain.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaurenMayert/voluptasipsam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LaurenMayert/voluptasipsam.git/issues"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "packages/*/*"
+  ],
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "lint-staged": {
+    "packages/*/src/**/*.js": [
+      "yarn run prettier --write --config .prettierrc",
+      "git add",
+      "yarn run eslint",
+      "yarn run test --findRelatedTests --ci --passWithNoTests"
+    ],
+    "packages/*/template/**/*.js": [
+      "yarn run prettier --write --config .prettierrc",
+      "git add",
+      "yarn run eslint"
+    ],
+    "scripts/**/*.js": [
+      "yarn run prettier --write --config .prettierrc",
+      "git add",
+      "yarn run eslint"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.42",
+    "@babel/core": "7.0.0-beta.42",
+    "@babel/node": "7.0.0-beta.42",
+    "@babel/plugin-proposal-async-generator-functions": "7.0.0-beta.42",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.42",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0-beta.42",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.42",
+    "@babel/plugin-transform-flow-strip-types": "7.0.0-beta.42",
+    "@babel/polyfill": "7.0.0-beta.42",
+    "@babel/preset-env": "7.0.0-beta.42",
+    "@babel/register": "7.0.0-beta.42",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "8.2.2",
+    "babel-jest": "23.0.0-alpha.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-eslint-comments": "2.0.2",
+    "eslint-plugin-flowtype": "2.46.1",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0",
+    "flow-bin": "0.68.0",
+    "fs-extra": "5.0.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "8.0.0-beta.2",
+    "gulp-newer": "1.4.0",
+    "gulp-plumber": "1.2.0",
+    "gulp-util": "3.0.8",
+    "husky": "0.14.3",
+    "jest": "22.4.3",
+    "jest-environment-node": "23.0.0-alpha.0",
+    "lerna": "2.9.0",
+    "lint-staged": "7.0.0",
+    "lodash": "4.17.5",
+    "prettier": "1.11.1",
+    "rollup": "0.57.1",
+    "rollup-plugin-babel": "4.0.0-beta.2",
+    "rollup-plugin-json": "2.3.0",
+    "rollup-plugin-node-resolve": "3.3.0",
+    "rollup-plugin-replace": "2.0.0",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "through2": "2.0.3",
+    "tmp": "0.0.33"
+  },
+  "resolutions": {
+    "ajv": "^6.1.0",
+    "bn.js": "^4.11.8",
+    "cross-spawn": "^6.0.4",
+    "grpc": "^1.8.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "packages/*/src/**/*.js",
+      "!**/bin/**",
+      "!**/__mocks__/**",
+      "!**/__tests__/**",
+      "!**/__data__/**",
+      "!**/__e2e__/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/packages/neo-one-client-core/src/utils/AsyncIteratorBase.flow.js"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/decls/.*",
+      "<rootDir>/packages/neo-one-node-neo-settings/src/test.js",
+      "<rootDir>/migrate/.*",
+      "<rootDir>/packages/.*/template/.*",
+      "<rootDir>/packages/.*/__e2e__/.*"
+    ],
+    "snapshotSerializers": [
+      "./scripts/serializers/blockchain.js",
+      "./scripts/serializers/bn.js",
+      "./scripts/serializers/buffer.js"
+    ],
+    "setupTestFrameworkScriptFile": "./scripts/test/jestSetup.js"
+  },
+  "author": "VivaEmard"
+}
